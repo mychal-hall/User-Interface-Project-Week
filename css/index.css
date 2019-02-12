@@ -152,9 +152,26 @@ header {
 .nav {
   display: flex;
   background-color: #98a4ae;
-  opacity: 0.85;
+  opacity: 0.9;
   justify-content: space-between;
-  padding: 13px;
+  padding-top: 10px;
+}
+.bar1,
+.bar2,
+.bar3 {
+  width: 34px;
+  height: 4px;
+  background-color: #fff;
+  margin: 5px 0;
+  border-radius: 3px;
+  transition: 0.4s;
+}
+.menuButton {
+  height: 40px;
+  margin-right: 60px;
+}
+.hidden {
+  display: none;
 }
 .logo {
   font-weight: bold;
@@ -168,7 +185,7 @@ header {
 }
 .jumboPic {
   width: 100%;
-  margin-top: -50px;
+  margin-top: -55px;
 }
 .jumboHeaders {
   position: absolute;
