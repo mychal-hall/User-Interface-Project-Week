@@ -521,3 +521,52 @@ address {
     height: 50px;
   }
 }
+.servicesHeaders {
+  position: absolute;
+  top: 140px;
+  left: 150px;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 75px;
+  color: #FFFFFF;
+}
+@media (max-width: 500px) {
+  .servicesHeaders {
+    top: 60px;
+    left: 10px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+}
+.introServices {
+  padding-top: 70px;
+  line-height: 30px;
+  width: 75%;
+}
+@media (max-width: 500px) {
+  .introServices {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+}
+.tabButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.tab {
+  width: 18%;
+  height: 50px;
+  text-align: center;
+  padding-top: 16px;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid black;
+}
+.tabContent {
+  display: flex;
+}
