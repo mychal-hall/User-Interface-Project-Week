@@ -223,6 +223,7 @@ header {
 }
 .jumboPic {
   width: 100%;
+  position: relative;
   margin-top: -55px;
 }
 @media (max-width: 500px) {
@@ -523,8 +524,8 @@ address {
 }
 .servicesHeaders {
   position: absolute;
-  top: 140px;
-  left: 150px;
+  top: 100px;
+  left: 75px;
   font-weight: bold;
   font-size: 64px;
   line-height: 75px;
@@ -567,6 +568,24 @@ address {
   font-weight: bold;
   border: 1px solid black;
 }
+.tab:hover {
+  background-color: #5E9EB8;
+}
+.tabHead {
+  margin: 100px auto 0px auto;
+  font-weight: bold;
+  width: 78%;
+  font-size: 20px;
+}
 .tabContent {
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 78%;
+}
+.tabText {
+  width: 50%;
+  font-size: 18px;
+  line-height: 22px;
 }
