@@ -87,6 +87,10 @@ header {
   z-index: 10;
 }
 
+nav {
+  position: absolute;
+  width: 100%;
+}
 .nav {
   display: flex;
   background-color: #98a4ae;
@@ -107,11 +111,38 @@ header {
 
 .menuButton {
   height: 40px;
+  width: 40px;
+  position: absolute;
+  right: 60px;
+  z-index: 3;
   margin-right: 60px;
   @media (max-width: 500px) {
     margin-right: 0px;
   }
 }
+
+.links {
+  height: 100vh;
+  width: 100%;
+  opacity: 0.9;
+  padding-top: 200px;
+  background-color: #98a4ae;
+
+    .menuLink {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+      text-decoration: none;
+      font-size: 36px;
+      font-weight: bold;
+      height: 60px;
+     &:hover {
+       color: rgb(75, 75, 75);
+  }
+}
+}
+
 
 .hidden {
   display: none;
@@ -129,7 +160,9 @@ header {
 }
 .logo {
   font-weight: bold;
+  z-index: 1;
   font-size: 24px;
+  height: 40px;;
   color: #FFFFFF;
   margin-left: 7%;
   @media (max-width: 500px) {
