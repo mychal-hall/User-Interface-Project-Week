@@ -6,59 +6,137 @@ v2.0b1 | 201101
 NOTE:WORK IN PROGRESS
 USE WITH CAUTION AND TEST WITH ABANDON */
 
-html,body,div,span,applet,object,iframe,
-h1,h2,h3,h4,h5,h6,p,blockquote,pre,
-a,abbr,acronym,address,big,cite,code,
-del,dfn,em,img,ins,kbd,q,s,samp,
-small,strike,strong,sub,sup,tt,var,
-b,u,i,center,
-dl,dt,dd,ol,ul,li,
-fieldset,form,label,legend,
-table,caption,tbody,tfoot,thead,tr,th,td,
-article,aside,canvas,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section,summary,
-time,mark,audio,video{
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  font:inherit;
-  vertical-align:baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section{
-  display:block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
-body{
-  line-height:1;
+body {
+  line-height: 1;
 }
-ol,ul{
-  list-style:none;
+ol,
+ul {
+  list-style: none;
 }
-blockquote,q{
-  quotes:none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before,blockquote:after,
-q:before,q:after{
-  content:’’;
-  content:none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: ’’;
+  content: none;
 }
-ins{
-  text-decoration:none;
+ins {
+  text-decoration: none;
 }
-del{
-  text-decoration:line-through;
+del {
+  text-decoration: line-through;
 }
 
-table{
-  border-collapse:collapse;
-  border-spacing:0;
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* Your Code Goes Here */
-
 
 * {
   box-sizing: border-box;
@@ -68,7 +146,7 @@ table{
   max-width: 1025px;
   width: 100%;
   margin: auto;
-  font-family: 'Roboto', Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   @media (max-width: 500px) {
     max-width: 500px;
     display: flex;
@@ -77,7 +155,6 @@ table{
     width: 100%;
   }
 }
-
 
 // Header and NavBar
 header {
@@ -100,7 +177,9 @@ nav {
   padding-top: 10px;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 34px;
   height: 4px;
   background-color: #fff;
@@ -128,21 +207,20 @@ nav {
   padding-top: 200px;
   background-color: #98a4ae;
 
-    .menuLink {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: #fff;
-      text-decoration: none;
-      font-size: 36px;
-      font-weight: bold;
-      height: 60px;
-     &:hover {
-       color: rgb(75, 75, 75);
+  .menuLink {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: bold;
+    height: 60px;
+    &:hover {
+      color: rgb(75, 75, 75);
+    }
   }
 }
-}
-
 
 .hidden {
   display: none;
@@ -151,7 +229,7 @@ nav {
 .open .bar1 {
   transform: rotate(-45deg) translate(-6px, 6px);
 }
-.open .bar2{
+.open .bar2 {
   opacity: 0;
 }
 
@@ -162,11 +240,12 @@ nav {
   font-weight: bold;
   z-index: 1;
   font-size: 24px;
-  height: 40px;;
-  color: #FFFFFF;
+  height: 40px;
+  color: #ffffff;
   margin-left: 7%;
   @media (max-width: 500px) {
-  width: 30px; }
+    width: 30px;
+  }
 }
 
 .inspire {
@@ -197,7 +276,7 @@ nav {
   font-weight: bold;
   font-size: 64px;
   line-height: 75px;
-  color: #FFFFFF;
+  color: #ffffff;
   @media (max-width: 500px) {
     top: 60px;
     left: 10px;
@@ -232,17 +311,17 @@ nav {
 }
 
 .ctaTwo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  // justify-content: space-evenly;
+  @media (max-width: 500px) {
+    max-width: 500px;
     display: flex;
-    flex-direction: row;
-    margin-top: 100px;
-    // justify-content: space-evenly;
-    @media (max-width: 500px) {
-      max-width: 500px;
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      width: 100%;
-    }
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
 }
 
 .ctaOnePic {
@@ -251,7 +330,6 @@ nav {
     width: 90%;
     align-self: center;
   }
-
 }
 
 .ctaTwoPic {
@@ -327,7 +405,7 @@ nav {
   margin-top: 96px;
   margin-left: 85px;
   width: 250px;
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     margin-top: 20px;
     margin-left: 35px;
     width: 100%;
@@ -341,7 +419,7 @@ nav {
 .recentPic {
   margin-top: 45px;
   margin-left: 83px;
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     margin-left: 0;
   }
 }
@@ -432,7 +510,7 @@ nav {
   margin-top: 60px;
   width: 28%;
   margin-left: 23px;
-  @media (max-width: 500px){
+  @media (max-width: 500px) {
     width: 90%;
   }
 }
@@ -456,7 +534,7 @@ nav {
   width: 15%;
   line-height: 26px;
   margin-top: 60px;
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     width: 90%;
     padding-left: 20px;
     margin-top: 40px;
@@ -468,18 +546,18 @@ address {
 }
 .copyright {
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   height: 20px;
   font-size: 12px;
   background-color: #828282;
-  @media (max-width:500px) {
+  @media (max-width: 500px) {
     text-align: left;
     padding-left: 15px;
     padding-top: 25px;
     height: 50px;
   }
 }
-// End Footer 
+// End Footer
 
 // Services Page
 
@@ -490,13 +568,13 @@ address {
   font-weight: bold;
   font-size: 64px;
   line-height: 75px;
-  color: #FFFFFF;
+  color: #ffffff;
   @media (max-width: 500px) {
     top: 60px;
     left: 10px;
     font-size: 32px;
     line-height: 40px;
-}
+  }
 }
 
 .introServices {
@@ -512,45 +590,77 @@ address {
   }
 }
 
-.tabButtons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-top: 50px;
-}
-
-.tab{
-  width: 18%;
-  height: 50px;
-  text-align: center;
-  padding-top: 16px;
-  font-size: 18px;
-  font-weight: bold;
-  border: 1px solid black;
-  &:hover {
- background-color: #5E9EB8;
+.tabs {
+  width: 100%;
+  .tabs-items {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    margin-bottom: 175px;
   }
-}
+  .tabs-item {
+    display: none;
+    width: 85%;
+    .tabs-item-title {
+      font-size: 24px;
+      font-weight: bold;
+      padding-bottom: 10px;
+    }
+  }
+  .tabs-item-selected {
+    display: block;
+  }
 
-.tabHead {
-  margin: 100px auto 0px auto;
-  font-weight: bold;
-  width: 78%;
-  font-size: 20px;
+  .tabs-item-description {
+    display: flex;
+    height: 315px;
+    flex-direction: row;
+    justify-content: space-between;
+    .tabs-info {
+      width: 49%;
+      flex-direction: column;
+      p {
+        margin-bottom: 10px;
+        line-height: 24px;
+      }
+    }
+    img {
+      width: 48%;
+      height: 100%;
+    }
+  }
+  .tabs-links {
+    margin-left: 5%;
+    margin-top: 50px;
+    display: flex;
+    background-color: #fff;
+    justify-content: space-evenly;
+    width: 90%;
+  }
 
-}
-.tabContent {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 20px;
-  width: 78%;
-}
-
-.tabText {
-  width: 50%;
-  font-size: 18px;
-  line-height: 22px;
+  .tabs-link {
+    padding: 20px 25px;
+    font-size: 24px;
+    background-color: #fff;
+    border: 1px solid #000;
+    color: #000;
+    cursor: pointer;
+    &:hover {
+      background-color: #5e9fb9;
+      color: #fff;
+    }
+  }
+  .tabs-link-selected {
+    z-index: 2;
+    background-color: #5e9fb9;
+    color: black;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
 }
 
 // END Services Page
