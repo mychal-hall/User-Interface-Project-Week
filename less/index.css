@@ -134,6 +134,9 @@ table {
   border-spacing: 0;
 }
 /* Your Code Goes Here */
+html {
+  font-size: 62.5%;
+}
 * {
   box-sizing: border-box;
 }
@@ -158,11 +161,11 @@ header {
   top: 0%;
   z-index: 10;
 }
-nav {
+header nav {
   position: absolute;
   width: 100%;
 }
-.nav {
+header .nav {
   display: flex;
   background-color: #98a4ae;
   opacity: 0.9;
@@ -170,9 +173,9 @@ nav {
   justify-content: space-between;
   padding-top: 10px;
 }
-.bar1,
-.bar2,
-.bar3 {
+header .bar1,
+header .bar2,
+header .bar3 {
   width: 34px;
   height: 4px;
   background-color: #fff;
@@ -180,7 +183,7 @@ nav {
   border-radius: 3px;
   transition: 0.4s;
 }
-.menuButton {
+header .menuButton {
   height: 40px;
   width: 40px;
   position: absolute;
@@ -189,61 +192,61 @@ nav {
   margin-right: 60px;
 }
 @media (max-width: 500px) {
-  .menuButton {
+  header .menuButton {
     margin-right: 0px;
   }
 }
-.links {
+header .links {
   height: 100vh;
   width: 100%;
   opacity: 0.9;
   padding-top: 200px;
   background-color: #98a4ae;
 }
-.links .menuLink {
+header .links .menuLink {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #fff;
   text-decoration: none;
-  font-size: 36px;
+  font-size: 3.6rem;
   font-weight: bold;
   height: 60px;
 }
-.links .menuLink:hover {
+header .links .menuLink:hover {
   color: #4b4b4b;
 }
-.hidden {
+header .hidden {
   display: none;
 }
-.open .bar1 {
+header .open .bar1 {
   transform: rotate(-45deg) translate(-6px, 6px);
 }
-.open .bar2 {
+header .open .bar2 {
   opacity: 0;
 }
-.open .bar3 {
+header .open .bar3 {
   transform: rotate(45deg) translate(-6px, -8px);
 }
-.logo {
+header .logo {
   font-weight: bold;
   z-index: 1;
-  font-size: 24px;
+  font-size: 2.4rem;
   height: 40px;
   color: #ffffff;
   margin-left: 7%;
 }
 @media (max-width: 500px) {
-  .logo {
+  header .logo {
     width: 30px;
   }
 }
-.inspire {
+.jumboIntro {
   position: relative;
   display: inline-block;
 }
 @media (max-width: 500px) {
-  .inspire {
+  .jumboIntro {
     max-width: 500px;
     display: flex;
     flex-direction: column;
@@ -251,45 +254,62 @@ nav {
     width: 100%;
   }
 }
-.jumboPic {
+.jumboIntro .jumboPic {
   width: 100%;
   position: relative;
   margin-top: -55px;
 }
 @media (max-width: 500px) {
-  .jumboPic {
+  .jumboIntro .jumboPic {
     margin-top: 0px;
   }
 }
-.jumboHeaders {
+.jumboIntro .jumboHeaders {
   position: absolute;
   top: 275px;
   left: 80px;
   font-weight: bold;
-  font-size: 64px;
+  font-size: 6.4rem;
   line-height: 75px;
   color: #ffffff;
 }
 @media (max-width: 500px) {
-  .jumboHeaders {
+  .jumboIntro .jumboHeaders {
     top: 60px;
     left: 10px;
-    font-size: 32px;
+    font-size: 3.2rem;
     line-height: 40px;
   }
 }
-.subHeader {
+.jumboIntro .servicesHeaders {
+  position: absolute;
+  top: 100px;
+  left: 75px;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 6.4rem;
+  line-height: 75px;
+  color: #ffffff;
+}
+@media (max-width: 500px) {
+  .jumboIntro .servicesHeaders {
+    top: 60px;
+    left: 10px;
+    font-size: 3.2rem;
+    line-height: 40px;
+  }
+}
+.ctas .ctaHeader {
+  font-weight: bold;
+  font-size: 2.4rem;
   color: #222222;
 }
-.ctaOne {
+.ctas .ctaOne {
   display: flex;
   flex-direction: row;
   margin-top: 50px;
 }
 @media (max-width: 500px) {
-  .ctaOne {
+  .ctas .ctaOne {
     max-width: 500px;
     display: flex;
     flex-direction: column-reverse;
@@ -298,13 +318,13 @@ nav {
     width: 100%;
   }
 }
-.ctaTwo {
+.ctas .ctaTwo {
   display: flex;
   flex-direction: row;
   margin-top: 100px;
 }
 @media (max-width: 500px) {
-  .ctaTwo {
+  .ctas .ctaTwo {
     max-width: 500px;
     display: flex;
     flex-direction: column;
@@ -312,34 +332,35 @@ nav {
     width: 100%;
   }
 }
-.ctaOnePic {
+.ctas .ctaOnePic {
   width: 40%;
 }
 @media (max-width: 500px) {
-  .ctaOnePic {
+  .ctas .ctaOnePic {
     width: 90%;
     align-self: center;
   }
 }
-.ctaTwoPic {
+.ctas .ctaTwoPic {
   width: 40%;
   margin-left: 85px;
 }
 @media (max-width: 500px) {
-  .ctaTwoPic {
+  .ctas .ctaTwoPic {
     width: 90%;
     margin-left: 0px;
     align-self: center;
   }
 }
-.ctaText {
+.ctas .ctaText {
   width: 40%;
   margin-left: 85px;
   margin-right: 35px;
   padding-top: 47px;
+  font-size: 1.6rem;
 }
 @media (max-width: 500px) {
-  .ctaText {
+  .ctas .ctaText {
     max-width: 500px;
     width: 100%;
     text-align: center;
@@ -348,14 +369,15 @@ nav {
     padding: 20px;
   }
 }
-.ctaTextTwo {
+.ctas .ctaTextTwo {
   width: 40%;
   margin-left: 30px;
   margin-right: 35px;
   padding-top: 40px;
+  font-size: 1.6rem;
 }
 @media (max-width: 500px) {
-  .ctaTextTwo {
+  .ctas .ctaTextTwo {
     max-width: 500px;
     width: 100%;
     text-align: center;
@@ -364,12 +386,12 @@ nav {
     padding: 20px;
   }
 }
-.ctaFiller {
+.ctas .ctaFiller {
   padding-top: 25px;
   line-height: 22px;
 }
 @media (max-width: 500px) {
-  .ctaFiller {
+  .ctas .ctaFiller {
     max-width: 500px;
     display: flex;
     flex-direction: column;
@@ -377,7 +399,7 @@ nav {
     width: 100%;
   }
 }
-.ctaButton {
+.ctas .ctaButton {
   height: 48px;
   width: 135px;
   text-align: center;
@@ -386,37 +408,42 @@ nav {
   border: 1px solid black;
 }
 @media (max-width: 500px) {
-  .ctaButton {
+  .ctas .ctaButton {
     width: 95%;
     margin-left: 5px;
   }
 }
-.recProg {
+.recentProjects .subHeader {
+  font-weight: bold;
+  font-size: 2.4rem;
+  color: #222222;
+}
+.recentProjects .recProg {
   margin-top: 96px;
   margin-left: 85px;
   width: 250px;
 }
 @media (max-width: 500px) {
-  .recProg {
+  .recentProjects .recProg {
     margin-top: 20px;
     margin-left: 35px;
     width: 100%;
   }
 }
-.recentHead {
+.recentProjects .recentHead {
   position: relative;
   display: inline-block;
 }
-.recentPic {
+.recentProjects .recentPic {
   margin-top: 45px;
   margin-left: 83px;
 }
 @media (max-width: 500px) {
-  .recentPic {
+  .recentProjects .recentPic {
     margin-left: 0;
   }
 }
-.oddText {
+.recentProjects .oddText {
   position: absolute;
   right: 0px;
   bottom: -33px;
@@ -424,19 +451,19 @@ nav {
   height: 90px;
   padding-top: 33px;
   padding-left: 5px;
-  font-size: 24px;
+  font-size: 2.4rem;
   text-align: center;
   letter-spacing: 8px;
   border: 1px solid white;
   background-color: #d8d8d8;
 }
 @media (max-width: 500px) {
-  .oddText {
+  .recentProjects .oddText {
     right: 20px;
     width: 90%;
   }
 }
-.evenText {
+.recentProjects .evenText {
   position: absolute;
   left: 82px;
   bottom: -33px;
@@ -444,20 +471,20 @@ nav {
   height: 90px;
   padding-top: 33px;
   padding-left: 5px;
-  font-size: 24px;
+  font-size: 2.4rem;
   text-align: center;
   letter-spacing: 8px;
   border: 1px solid white;
   background-color: #d8d8d8;
 }
 @media (max-width: 500px) {
-  .evenText {
+  .recentProjects .evenText {
     max-width: 500px;
     left: 25px;
     width: 90%;
   }
 }
-.recentInfo {
+.recentProjects .recentInfo {
   width: 43%;
   position: relative;
   margin-left: 285px;
@@ -465,10 +492,10 @@ nav {
   margin-bottom: 49px;
   height: 300px;
   line-height: 24px;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 @media (max-width: 500px) {
-  .recentInfo {
+  .recentProjects .recentInfo {
     max-width: 500px;
     align-content: center;
     width: 100%;
@@ -493,55 +520,55 @@ nav {
     width: 100%;
   }
 }
-.footHead {
-  font-size: 20px;
+.footer .footHead {
+  font-size: 2rem;
   line-height: 24px;
   font-weight: bold;
 }
-.interest {
+.footer .interest {
   margin-top: 60px;
   width: 28%;
   margin-left: 23px;
 }
 @media (max-width: 500px) {
-  .interest {
+  .footer .interest {
     width: 90%;
   }
 }
-.email {
+.footer .email {
   height: 40px;
   width: 97%;
   border-radius: 3px;
   border: none;
   margin-top: 15px;
-  font-size: 15px;
+  font-size: 1.5rem;
   padding-bottom: 2px;
 }
-.interest p {
-  font-size: 12px;
+.footer .interest p {
+  font-size: 1.2rem;
   margin-top: 10px;
   letter-spacing: 0.5px;
 }
-.locations {
+.footer .locations {
   width: 15%;
   line-height: 26px;
   margin-top: 60px;
 }
 @media (max-width: 500px) {
-  .locations {
+  .footer .locations {
     width: 90%;
     padding-left: 20px;
     margin-top: 40px;
   }
 }
-address {
-  font-size: 14px;
+.footer address {
+  font-size: 1.4rem;
 }
 .copyright {
   text-align: center;
   color: #ffffff;
   height: 20px;
-  font-size: 12px;
+  font-size: 1.2rem;
   background-color: #828282;
 }
 @media (max-width: 500px) {
@@ -552,27 +579,11 @@ address {
     height: 50px;
   }
 }
-.servicesHeaders {
-  position: absolute;
-  top: 100px;
-  left: 75px;
-  font-weight: bold;
-  font-size: 64px;
-  line-height: 75px;
-  color: #ffffff;
-}
-@media (max-width: 500px) {
-  .servicesHeaders {
-    top: 60px;
-    left: 10px;
-    font-size: 32px;
-    line-height: 40px;
-  }
-}
 .introServices {
   padding-top: 70px;
   line-height: 30px;
   width: 75%;
+  font-size: 1.6rem;
 }
 @media (max-width: 500px) {
   .introServices {
@@ -599,7 +610,7 @@ address {
   width: 85%;
 }
 .tabs .tabs-item .tabs-item-title {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: bold;
   padding-bottom: 10px;
 }
@@ -619,6 +630,7 @@ address {
 .tabs .tabs-item-description .tabs-info p {
   margin-bottom: 10px;
   line-height: 24px;
+  font-size: 1.6rem;
 }
 .tabs .tabs-item-description img {
   width: 48%;
@@ -634,7 +646,7 @@ address {
 }
 .tabs .tabs-link {
   padding: 20px 25px;
-  font-size: 24px;
+  font-size: 2.4rem;
   background-color: #fff;
   border: 1px solid #000;
   color: #000;
@@ -650,6 +662,6 @@ address {
   color: black;
 }
 .tabs .tabs-link-selected:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #5e9fb9;
+  color: #fff;
 }
