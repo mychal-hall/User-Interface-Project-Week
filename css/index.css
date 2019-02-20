@@ -440,6 +440,7 @@ header .logo {
 }
 @media (max-width: 500px) {
   .recentProjects .recentPic {
+    max-width: 500px;
     margin-left: 0;
   }
 }
@@ -460,6 +461,7 @@ header .logo {
 @media (max-width: 500px) {
   .recentProjects .oddText {
     right: 20px;
+    bottom: -50px;
     width: 90%;
   }
 }
@@ -481,6 +483,7 @@ header .logo {
   .recentProjects .evenText {
     max-width: 500px;
     left: 25px;
+    bottom: -50px;
     width: 90%;
   }
 }
@@ -588,14 +591,19 @@ header .logo {
 @media (max-width: 500px) {
   .introServices {
     max-width: 500px;
-    display: flex;
-    flex-direction: column;
+    padding-top: 30px;
     align-content: center;
-    width: 100%;
+    width: 90%;
   }
 }
 .tabs {
   width: 100%;
+}
+@media (max-width: 500px) {
+  .tabs {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .tabs .tabs-items {
   width: 100%;
@@ -604,6 +612,11 @@ header .logo {
   justify-content: center;
   padding-top: 60px;
   margin-bottom: 175px;
+}
+@media (max-width: 500px) {
+  .tabs .tabs-items {
+    height: 500px;
+  }
 }
 .tabs .tabs-item {
   display: none;
@@ -623,18 +636,38 @@ header .logo {
   flex-direction: row;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .tabs .tabs-item-description {
+    flex-direction: column;
+  }
+}
 .tabs .tabs-item-description .tabs-info {
   width: 49%;
   flex-direction: column;
+}
+@media (max-width: 500px) {
+  .tabs .tabs-item-description .tabs-info {
+    width: 90%;
+  }
 }
 .tabs .tabs-item-description .tabs-info p {
   margin-bottom: 10px;
   line-height: 24px;
   font-size: 1.6rem;
 }
+@media (max-width: 500px) {
+  .tabs .tabs-item-description .tabs-info p {
+    margin-bottom: 30px;
+  }
+}
 .tabs .tabs-item-description img {
   width: 48%;
   height: 100%;
+}
+@media (max-width: 500px) {
+  .tabs .tabs-item-description img {
+    width: 100%;
+  }
 }
 .tabs .tabs-links {
   margin-left: 5%;
@@ -643,6 +676,12 @@ header .logo {
   background-color: #fff;
   justify-content: space-evenly;
   width: 90%;
+}
+@media (max-width: 500px) {
+  .tabs .tabs-links {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 .tabs .tabs-link {
   padding: 20px 25px;
@@ -655,6 +694,11 @@ header .logo {
 .tabs .tabs-link:hover {
   background-color: #5e9fb9;
   color: #fff;
+}
+@media (max-width: 500px) {
+  .tabs .tabs-link {
+    margin-bottom: 30px;
+  }
 }
 .tabs .tabs-link-selected {
   z-index: 2;
