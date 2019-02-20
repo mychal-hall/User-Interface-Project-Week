@@ -1,21 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Contact Us</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-	<link rel="stylesheet" href="css/index.css">
-	<!--[if IE]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <title>Contact Us</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <!--[if IE]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
 
-<body>
+  <body>
+    <!-- Menu Content  -->
+    <header>
+      <div class="container nav">
+        <h1 class="logo">S&J</h1>
+        <nav class="container">
+          <div class="menuButton">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
 
-	<h1>Contact</h1>
+          <div class="links hidden">
+            <ul>
+              <a class="menuLink" href="index.html"> Home</a>
+              <a class="menuLink" href="services.html"> Services</a>
+              <a class="menuLink" href="contact.html"> Contact</a>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Contact Us Content  -->
+    <div class="container">
+      <div class="jumboIntro">
+        <img
+          class="jumboPic"
+          src="img/contact/contact-jumbotron.png"
+          alt="Sky high, I can fly."
+        />
+        <h1 class="servicesHeaders">
+          Contact Us
+        </h1>
+      </div>
+    </div>
+    <div class="container content">
+      <h1 class="subHeader">Get In Touch</h1>
+      <div class="contactInfo">
+        <div class="contactForms">
+			<h4>Email Address</h4>
+          <input
+            class="email"
+            type="email"
+            name="email"
+            placeholder="  Enter email"
+          /><br />
 
-<!-- Contactd Us Content 
-  Contact Us
+          <p>We'll never share your email with anyone else.</p>
+          <h4>How many buildings do you need planned?</h4>
+          <select class="buildings" name="buildings">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+          <h4>Provide a brief overview of your project needs:</h4>
+          <textarea class="overview" name="overview" rows="10" cols="30">
+          </textarea>
+          <form>
+            <input
+              class="radioButton"
+              type="radio"
+              name="owner"
+              value="small"
+            />
+            I am a small business<br />
+            <input
+              class="radioButton"
+              type="radio"
+              name="owner"
+              value="residential"
+            />
+            I am a residential owner<br />
+            <input
+              class="radioButton"
+              type="radio"
+              name="owner"
+              value="corporation"
+            />
+            I am a corporation
+          </form>
+          <p class="submitButton">Submit</p>
+        </div>
+        <div class="contactAddress">
+			<h1 class="subHeader">Where We Work</h1>
+          <div class="locations">
+            <h2 class="addressHead">New York</h2>
+            <address>
+              123 Lane<br />
+              Suite 100<br />
+              Albany, NY 12345<br />
+              202 555 0144
+            </address>
+          </div>
+          <div class="locations">
+            <h2 class="addressHead">Florida</h2>
+            <address>
+              Ocean Drive<br />
+              Suite 201<br />
+              Orlando, FL 22345<br />
+              502 555 0144
+            </address>
+          </div>
+          <div class="locations">
+            <h2 class="addressHead">California</h2>
+            <address>
+              Mountain Street<br />
+              Suite 105<br />
+              San Diego, CA 22345<br />
+              702 555 0144
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--
+
   
 Get In Touch
 
@@ -55,7 +170,52 @@ San Diego, CA 22345
 702 555 0144
 
 -->
+    <!-- FOOTER CONTENT -->
 
-	<script src="js/index.js"></script>
-</body>
+    <div class="container footer">
+      <div class="interest">
+        <h2 class="footHead">Interested in starting a project?</h2>
+        <h2 class="footHead">Let’s talk:</h2>
+
+        <input
+          class="email"
+          type="email"
+          name="email"
+          placeholder="  Enter email"
+        /><br />
+
+        <p>We'll never share your email with anyone else.</p>
+      </div>
+      <div class="locations">
+        <h2 class="footHead">New York</h2>
+        <address>
+          123 Lane<br />
+          Suite 100<br />
+          Albany, NY 12345<br />
+          202 555 0144
+        </address>
+      </div>
+      <div class="locations">
+        <h2 class="footHead">Florida</h2>
+        <address>
+          Ocean Drive<br />
+          Suite 201<br />
+          Orlando, FL 22345<br />
+          502 555 0144
+        </address>
+      </div>
+      <div class="locations">
+        <h2 class="footHead">California</h2>
+        <address>
+          Mountain Street<br />
+          Suite 105<br />
+          San Diego, CA 22345<br />
+          702 555 0144
+        </address>
+      </div>
+    </div>
+    <p class="container copyright">Copyright © 2018 Smith and Jones</p>
+    <!-- END Footer Content -->
+    <script src="js/index.js"></script>
+  </body>
 </html>
