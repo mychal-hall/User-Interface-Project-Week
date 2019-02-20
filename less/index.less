@@ -267,14 +267,21 @@ header {
     position: relative;
     margin-top: -55px;
     @media (max-width: 500px) {
-      margin-top: 0px;
+      display: none;
+    }
+  }
+
+  .mobileJumboPic {
+    display: none;
+    @media (max-width: 500px) {
+      display: block;
     }
   }
 
   .jumboHeaders {
     position: absolute;
-    top: 275px;
-    left: 80px;
+    top: 50%;
+    left: 10%;
     font-weight: bold;
     font-size: 6.4rem;
     line-height: 75px;
@@ -297,7 +304,7 @@ header {
     line-height: 75px;
     color: #ffffff;
     @media (max-width: 500px) {
-      top: 60px;
+      top: 170px;
       left: 10px;
       font-size: 3.2rem;
       line-height: 40px;
@@ -337,6 +344,7 @@ header {
     // justify-content: space-evenly;
     @media (max-width: 500px) {
       max-width: 500px;
+      margin-top: 30px;
       display: flex;
       flex-direction: column;
       align-content: center;
@@ -347,6 +355,15 @@ header {
   .ctaOnePic {
     width: 40%;
     @media (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  .mobileCtaOnePic {
+    display: none;
+    @media (max-width: 500px) {
+      display: block;
+      margin-top: 20px;
       width: 90%;
       align-self: center;
     }
@@ -356,8 +373,15 @@ header {
     width: 40%;
     margin-left: 85px;
     @media (max-width: 500px) {
+      display: none;
+    }
+  }
+
+  .mobileCtaTwoPic {
+    display: none;
+    @media (max-width: 500px) {
+      display: block;
       width: 90%;
-      margin-left: 0px;
       align-self: center;
     }
   }
@@ -444,13 +468,24 @@ header {
   .recentHead {
     position: relative;
     display: inline-block;
+    @media (max-width: 500px) {
+      width: 500px;
+    }
   }
   .recentPic {
     margin-top: 45px;
     margin-left: 83px;
     @media (max-width: 500px) {
-      max-width: 500px;
-      margin-left: 0;
+      display: none;
+    }
+  }
+
+  .mobileRecentPic {
+    display: none;
+    @media (max-width: 500px) {
+      display: block;
+      height: auto;
+      width: 100%;
     }
   }
 
@@ -468,7 +503,7 @@ header {
     border: 1px solid white;
     background-color: #d8d8d8;
     @media (max-width: 500px) {
-      right: 20px;
+      right: 40px;
       bottom: -50px;
       width: 90%;
     }
@@ -489,7 +524,7 @@ header {
     background-color: #d8d8d8;
     @media (max-width: 500px) {
       max-width: 500px;
-      left: 25px;
+      left: 10px;
       bottom: -50px;
       width: 90%;
     }
@@ -716,46 +751,99 @@ header {
   font-size: 2.4rem;
   color: #222222;
   margin: 35px;
+  margin-bottom: 45px;
 }
 
-.contactInfo{
-  border: 1px solid orange;
+.contactInfo {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   .contactForms {
-    border: 1px solid blue;
     width: 49%;
     h4 {
+      font-size: 1.6rem;
+      padding-left: 5%;
+      margin-bottom: 10px;
+    }
 
+    .disclaimer {
+      margin-top: 5px;
+      margin-bottom: 35px;
+      font-weight: bold;
+      margin-left: 5%;
+      color: #c5c8cc;
+    }
+    .email {
+      width: 90%;
+      margin-left: 5%;
+      padding-left: 5px;
+      font-size: 1.6rem;
+      height: 35px;
+      border-radius: 3px;
+      border: 1px solid lightgray;
     }
     .buildings {
+      width: 90%;
+      margin-left: 5%;
+      margin-bottom: 35px;
+      padding-left: 5px;
+      font-size: 1.6rem;
+      height: 35px;
+      border-radius: 3px;
+      background-color: #fff;
+      border: 1px solid lightgray;
 
     }
 
     .overview {
-
+      margin-left: 5%;
+      width: 90%;
+      margin-bottom: 30px;
     }
 
     .radioButton {
+      margin-left: 5%;
+      height: 20px;
+      font-size: 1.8rem;
+      appearance: none;
+      background-color: #fff;
 
     }
 
-    .submitButton {
+    label {
+      font-size: 1.6rem;
+      display: inline;
+    }
 
+    .submitButton {
+      font-size: 1.6rem;
+      border: 1px solid black;
+      width: 30%;
+      height: 45px;
+      padding-top: 15px;
+      text-align: center;
+      margin-left: 5%;
+      margin-top: 30px;
     }
   }
 
   .contactAddress {
-    border: 1px solid green;
-    width: 49%;
-    .locations {
+    width: 35%;
 
+    .addressHeader {
+      margin-top: -50px;
+      margin-left: 0px;
+    }
+    .locations {
+      font-size: 1.6rem;
+      line-height: 25px;
     }
 
     .addressHead {
-
+      font-weight: bold;
+      font-size: 2.0rem;
+      margin-top: 40px;
     }
   }
 }

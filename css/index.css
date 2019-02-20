@@ -261,13 +261,21 @@ header .logo {
 }
 @media (max-width: 500px) {
   .jumboIntro .jumboPic {
-    margin-top: 0px;
+    display: none;
+  }
+}
+.jumboIntro .mobileJumboPic {
+  display: none;
+}
+@media (max-width: 500px) {
+  .jumboIntro .mobileJumboPic {
+    display: block;
   }
 }
 .jumboIntro .jumboHeaders {
   position: absolute;
-  top: 275px;
-  left: 80px;
+  top: 50%;
+  left: 10%;
   font-weight: bold;
   font-size: 6.4rem;
   line-height: 75px;
@@ -292,7 +300,7 @@ header .logo {
 }
 @media (max-width: 500px) {
   .jumboIntro .servicesHeaders {
-    top: 60px;
+    top: 170px;
     left: 10px;
     font-size: 3.2rem;
     line-height: 40px;
@@ -326,6 +334,7 @@ header .logo {
 @media (max-width: 500px) {
   .ctas .ctaTwo {
     max-width: 500px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -337,6 +346,16 @@ header .logo {
 }
 @media (max-width: 500px) {
   .ctas .ctaOnePic {
+    display: none;
+  }
+}
+.ctas .mobileCtaOnePic {
+  display: none;
+}
+@media (max-width: 500px) {
+  .ctas .mobileCtaOnePic {
+    display: block;
+    margin-top: 20px;
     width: 90%;
     align-self: center;
   }
@@ -347,8 +366,16 @@ header .logo {
 }
 @media (max-width: 500px) {
   .ctas .ctaTwoPic {
+    display: none;
+  }
+}
+.ctas .mobileCtaTwoPic {
+  display: none;
+}
+@media (max-width: 500px) {
+  .ctas .mobileCtaTwoPic {
+    display: block;
     width: 90%;
-    margin-left: 0px;
     align-self: center;
   }
 }
@@ -434,14 +461,28 @@ header .logo {
   position: relative;
   display: inline-block;
 }
+@media (max-width: 500px) {
+  .recentProjects .recentHead {
+    width: 500px;
+  }
+}
 .recentProjects .recentPic {
   margin-top: 45px;
   margin-left: 83px;
 }
 @media (max-width: 500px) {
   .recentProjects .recentPic {
-    max-width: 500px;
-    margin-left: 0;
+    display: none;
+  }
+}
+.recentProjects .mobileRecentPic {
+  display: none;
+}
+@media (max-width: 500px) {
+  .recentProjects .mobileRecentPic {
+    display: block;
+    height: auto;
+    width: 100%;
   }
 }
 .recentProjects .oddText {
@@ -460,7 +501,7 @@ header .logo {
 }
 @media (max-width: 500px) {
   .recentProjects .oddText {
-    right: 20px;
+    right: 40px;
     bottom: -50px;
     width: 90%;
   }
@@ -482,7 +523,7 @@ header .logo {
 @media (max-width: 500px) {
   .recentProjects .evenText {
     max-width: 500px;
-    left: 25px;
+    left: 10px;
     bottom: -50px;
     width: 90%;
   }
@@ -714,19 +755,88 @@ header .logo {
   font-size: 2.4rem;
   color: #222222;
   margin: 35px;
+  margin-bottom: 45px;
 }
 .contactInfo {
-  border: 1px solid orange;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .contactInfo .contactForms {
-  border: 1px solid blue;
   width: 49%;
 }
+.contactInfo .contactForms h4 {
+  font-size: 1.6rem;
+  padding-left: 5%;
+  margin-bottom: 10px;
+}
+.contactInfo .contactForms .disclaimer {
+  margin-top: 5px;
+  margin-bottom: 35px;
+  font-weight: bold;
+  margin-left: 5%;
+  color: #c5c8cc;
+}
+.contactInfo .contactForms .email {
+  width: 90%;
+  margin-left: 5%;
+  padding-left: 5px;
+  font-size: 1.6rem;
+  height: 35px;
+  border-radius: 3px;
+  border: 1px solid lightgray;
+}
+.contactInfo .contactForms .buildings {
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 35px;
+  padding-left: 5px;
+  font-size: 1.6rem;
+  height: 35px;
+  border-radius: 3px;
+  background-color: #fff;
+  border: 1px solid lightgray;
+}
+.contactInfo .contactForms .overview {
+  margin-left: 5%;
+  width: 90%;
+  margin-bottom: 30px;
+}
+.contactInfo .contactForms .radioButton {
+  margin-left: 5%;
+  height: 20px;
+  font-size: 1.8rem;
+  appearance: none;
+  background-color: #fff;
+}
+.contactInfo .contactForms label {
+  font-size: 1.6rem;
+  display: inline;
+}
+.contactInfo .contactForms .submitButton {
+  font-size: 1.6rem;
+  border: 1px solid black;
+  width: 30%;
+  height: 45px;
+  padding-top: 15px;
+  text-align: center;
+  margin-left: 5%;
+  margin-top: 30px;
+}
 .contactInfo .contactAddress {
-  border: 1px solid green;
-  width: 49%;
+  width: 35%;
+}
+.contactInfo .contactAddress .addressHeader {
+  margin-top: -50px;
+  margin-left: 0px;
+}
+.contactInfo .contactAddress .locations {
+  font-size: 1.6rem;
+  line-height: 25px;
+}
+.contactInfo .contactAddress .addressHead {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 40px;
 }
