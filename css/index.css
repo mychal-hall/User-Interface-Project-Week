@@ -763,8 +763,22 @@ header .logo {
   flex-direction: row;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .contactInfo {
+    max-width: 500px;
+    margin-top: 30px;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+  }
+}
 .contactInfo .contactForms {
   width: 49%;
+}
+@media (max-width: 500px) {
+  .contactInfo .contactForms {
+    width: 100%;
+  }
 }
 .contactInfo .contactForms h4 {
   font-size: 1.6rem;
@@ -824,19 +838,46 @@ header .logo {
   margin-left: 5%;
   margin-top: 30px;
 }
+@media (max-width: 500px) {
+  .contactInfo .contactForms .submitButton {
+    width: 90%;
+  }
+}
 .contactInfo .contactAddress {
   width: 35%;
+}
+@media (max-width: 500px) {
+  .contactInfo .contactAddress {
+    width: 100%;
+  }
 }
 .contactInfo .contactAddress .addressHeader {
   margin-top: -50px;
   margin-left: 0px;
 }
+@media (max-width: 500px) {
+  .contactInfo .contactAddress .addressHeader {
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-bottom: 10px;
+  }
+}
 .contactInfo .contactAddress .locations {
   font-size: 1.6rem;
   line-height: 25px;
+}
+@media (max-width: 500px) {
+  .contactInfo .contactAddress .locations {
+    margin-left: 5%;
+  }
 }
 .contactInfo .contactAddress .addressHead {
   font-weight: bold;
   font-size: 2rem;
   margin-top: 40px;
+}
+@media (max-width: 500px) {
+  .contactInfo .contactAddress .addressHead {
+    margin-top: 30px;
+  }
 }
