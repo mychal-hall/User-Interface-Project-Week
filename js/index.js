@@ -2,6 +2,8 @@
 
 const menuButton = document.querySelector(".menuButton");
 const navMenu = document.querySelector(".links");
+const navLink = document.querySelectorAll(".menuLink");
+
 
 menuButton.addEventListener("click", event => {
   menuButton.classList.toggle("open");
@@ -44,8 +46,16 @@ class TabItem {
   }
 }
 
-links = document
-  .querySelectorAll(".tabs-link")
-  .forEach(tablink => new TabLink(tablink));
+links = document.querySelectorAll(".tabs-link")
+                .forEach(tablink => new TabLink(tablink));
 
-const links = document.querySelector('.links')
+
+// const timeline = new TimelineMax({ paused: true, reversed: true });
+// timeline.to('.links', 1, { opacity: 0.9});
+
+// menuButton.addEventListener('click', function() {   
+//   timeline.reversed() ? timeline.play() : timeline.reverse();
+// });
+
+// menuButton.addEventListener("click", event =>
+// TweenMax.to('.links', 1, { opacity: 1, ease: Power4.easeIn})
